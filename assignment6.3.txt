@@ -1,0 +1,53 @@
+Explain the working of below pig script commands with an example:
+
+1. LOAD
+
+  * Loads the data in the Pig. 
+
+  * Eg: relation_name = LOAD 'input file path' USING function as schema;
+
+2. STORE
+  
+  * Used to store the data in the file system after the data is loaded in file system.
+
+  * Eg: STORE relation_name INTO 'directory_path' USING function;
+
+
+3. DUMP
+
+  * It is used to print the contents of the relation on the console.
+
+  * Eg:DUMP relation_name;
+
+4. FOREACH
+
+  * It is used to generate specified data transformations oon column data.
+
+  * Eg:relation_name2 = FOREACH relation_name GENERATE (data);
+
+5. FILTER
+
+  * Based on a specified condition it selects the tuples from the relation and filters the data and displays it .
+
+  * Eg:relation_name3 = FILTER relation_name BY (condition).
+
+6. GROUP BY
+
+  * The group by operator is used to group the data.
+
+  * The data is grouped into one or more relation.
+
+  * Eg:group_relation = GROUP relation_name BY data;
+
+7. ORDER BY
+
+  * The order by operator is used to display the contents of the relation in sorted order.
+
+  * Eg:relation3 = ORDER relation_name BY (ASC|DESC);
+  
+
+8. DESCRIBE 
+  * The describe command is used to view the schema of the relation.
+
+  * Eg:DESCRIBE relation_name;
+
